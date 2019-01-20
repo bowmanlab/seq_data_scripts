@@ -8,19 +8,19 @@
 
 library(dada2)
 
-path <- 'demultiplexed'
+path <- 'demultiplexed_16S'
 
 fnFs <- sort(list.files(path, pattern = '-R1.fastq', full.names = T))
 fnRs <- sort(list.files(path, pattern = '-R2.fastq', full.names = T))
 
 sample.names <- sapply(strsplit(basename(fnFs), "-"), `[`, 1)
 
-pdf('quality_profiles.pdf', width = 6, height = 6)
+pdf(paste0(path, '/', 'quality_profiles.pdf'), width = 6, height = 6)
 
 for(i in 1:length(fnFs)){
-	plotQualityProfile(fnFs[i])
-	plotQualityProfile(fnRs[i])
-	}
+	print(plotQualityProfile(fnFs[i]))
+	print(plotQualityProfile(fnRs[i]))
+}
 	
 dev.off()
 
@@ -43,9 +43,9 @@ out <- filterAndTrim(fnFs,
 errF <- learnErrors(filtFs, multithread=TRUE)
 errR <- learnErrors(filtRs, multithread=TRUE)
 
-pdf('error_rates.pdf', width = 6, height = 6)
-plotErrors(errF, nominalQ = T)
-plotErrors(errR, nominalQ = T)
+pdf(paste0(path, '/', 'error_rates.pdf'), width = 6, height = 6)
+print(plotErrors(errF, nominalQ = T))
+print(plotErrors(errR, nominalQ = T))
 dev.off()
 
 derepFs <- derepFastq(filtFs, verbose = T)
