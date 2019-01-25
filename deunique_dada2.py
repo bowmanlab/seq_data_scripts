@@ -16,13 +16,16 @@ read_table = pd.read_csv(name + '.csv')
 l = 0
 a = 0
 
-with open(name + '.exp.16S.fasta', 'w') as fasta_out:
+with open(name + '.exp.fasta', 'w') as exp_out, open(name + '.uni.fasta', 'w') as uni_out:
     for index, row in read_table.iterrows():
         a = a + row.abundance
         l = l + 1
+        
+        print >> uni_out, '>' + str(index) + '_unique'
+        print >> uni_out, row.sequence
+        
         for i in range(1, row.abundance):
-            print >> fasta_out, '>' + str(index) + '_' + str(i)
-            print >> fasta_out, row.sequence
-            #print str(index) + '_' + str(i), row.sequence
+            print >> exp_out, '>' + str(index) + '_' + str(i)
+            print >> exp_out, row.sequence
             
 print name, l, a
