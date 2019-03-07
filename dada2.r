@@ -8,7 +8,11 @@
 
 library(dada2)
 
-path <- 'demultiplexed_16S'
+path <- 'demultiplexed'
+gene <- '16S'
+
+#fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
+#fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
 
 fnFs <- sort(list.files(path, pattern = '-R1.fastq', full.names = T))
 fnRs <- sort(list.files(path, pattern = '-R2.fastq', full.names = T))
@@ -24,9 +28,9 @@ for(i in 1:length(fnFs)){
 	
 dev.off()
 
-file_path <- file.path("filtered") # Place filtered files in filtered/ subdirectory
-filtFs <- file.path(file_path, paste0(sample.names, "_R1.filt.fastq"))
-filtRs <- file.path(file_path, paste0(sample.names, "_R2.filt.fastq"))
+file_path <- file.path(paste0(path, '/','filtered')) # Place filtered files in filtered/ subdirectory
+filtFs <- file.path(file_path, paste0(sample.names, "_R1.filt.fastq.gz"))
+filtRs <- file.path(file_path, paste0(sample.names, "_R2.filt.fastq.gz"))
 
 ## multithreading only useful if multiple fastq files
 
@@ -35,10 +39,15 @@ out <- filterAndTrim(fnFs,
 	fnRs,
 	filtRs,
 	multithread = T,
-	#minQ = 20,
-	#trimLeft = 20,
-	#truncLen = 145,
+#	minQ = 20,
+#	truncQ = 30,
+	trimLeft = 10,
+	truncLen = 140,
 	verbose = T)
+
+plotQualityProfile(filtFs[1])
+
+## need distribution of lengths for filtFs and filtRs
 	
 errF <- learnErrors(filtFs, multithread=TRUE)
 errR <- learnErrors(filtRs, multithread=TRUE)
@@ -63,11 +72,36 @@ mergers <- mergePairs(dadaFs,
                       derepFs,
                       dadaRs,
                       derepRs,
-                      maxMismatch = 1,
+                      maxMismatch = 0,
                       verbose=TRUE)
 
-dir.create('merged')
+## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
+## so if you have more than 10 strains you probably QC'd insufficiently.
+
+## Above method still produces reads of different lengths after merge.  Generate a function to
+## evaluate distribution of read lengths and eliminate anything that is not correct length.
+
+check.length <- function(mergers){
+  for(name in names(mergers)){
+    temp <- mergers[[name]]
+    temp.lengths <- unlist(lapply(temp$sequence, nchar))
+    temp.lengths.expand <- rep(temp.lengths, temp$abundance)
+    hist(temp.lengths.expand, breaks = 100)
+    
+    temp[, 'length'] = temp.lengths
+    mergers[[name]] = temp
+  }
+  return(mergers)
+}
+
+## Write fasta file for all reads at or below the expected read length.
+
+max.read.length <- 155
+
+dir.create(paste0(path, '/', 'merged_2'))
 
 for(name in names(mergers)){
-	write.csv(mergers[[name]], paste0('merged/', name, '.csv'), quote = F, row.names = F)
+  temp <- mergers[[name]]
+  temp <- temp[which(temp$length <= max.read.length),]
+	write.csv(mergers[[name]], paste0(path, '/merged_2/', name, '.', gene, '.csv'), quote = F, row.names = F)
 }
