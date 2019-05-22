@@ -17,11 +17,12 @@ gene <- '16S'
 fnFs <- sort(list.files(path, pattern = '-R1.fastq', full.names = T))
 fnRs <- sort(list.files(path, pattern = '-R2.fastq', full.names = T))
 
-sample.names <- sapply(strsplit(basename(fnFs), "-"), `[`, 1)
+sample.names <- sapply(strsplit(basename(fnFs), "-R"), `[`, 1)
 
 pdf(paste0(path, '/', 'quality_profiles.pdf'), width = 6, height = 6)
 
 for(i in 1:length(fnFs)){
+	print(fnFs[i])
 	print(plotQualityProfile(fnFs[i]))
 	print(plotQualityProfile(fnRs[i]))
 }
