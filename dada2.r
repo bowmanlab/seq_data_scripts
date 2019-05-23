@@ -34,6 +34,8 @@ filtFs <- file.path(file_path, paste0(sample.names, "_R1.filt.fastq.gz"))
 filtRs <- file.path(file_path, paste0(sample.names, "_R2.filt.fastq.gz"))
 
 ## multithreading only useful if multiple fastq files
+## for the ANL primers, trimleft = 10 is usually good for 16S, while
+## truncLen = 135 is good for 18S
 
 out <- filterAndTrim(fnFs,
 	filtFs,
