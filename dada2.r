@@ -97,12 +97,12 @@ check.length <- function(mergers){
 
 ## Write fasta file for all reads at or below the expected read length.
 
-max.read.length <- 155
+max.read.length <- 300
 
-dir.create(paste0(path, '/', 'merged_2'))
+dir.create(paste0(path, '/', 'merged/'))
 
 for(name in names(mergers)){
   temp <- mergers[[name]]
   temp <- temp[which(temp$length <= max.read.length),]
-	write.csv(mergers[[name]], paste0(path, '/merged_2/', name, '.', gene, '.csv'), quote = F, row.names = F)
+	write.csv(mergers[[name]], paste0(path, '/merged/', name, '.', gene, '.csv'), quote = F, row.names = F)
 }
