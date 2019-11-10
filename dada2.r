@@ -76,8 +76,7 @@ mergers <- mergePairs(dadaFs,
 ## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
 ## so if you have more than 10 strains you probably QC'd insufficiently.
 
-## Above method still produces reads of different lengths after merge.  Generate a function to
-## evaluate distribution of read lengths and eliminate anything that is not correct length.
+## Function to evaluate lengths in case you want to look at that.
 
 check.length <- function(mergers){
   for(name in names(mergers)){
@@ -94,15 +93,8 @@ check.length <- function(mergers){
 
 mergers <- check.length(mergers)
 
-## Write fasta file for all reads at the expected read length.
-
-read.length <- 223
-
 dir.create(paste0(path, '/', 'merged'))
 
 for(name in names(mergers)){
-  temp <- mergers[[name]]
-  temp <- temp[which(temp$length == read.length),]
-  print(c(name, sum(temp$abundance[which(temp$length == read.length)])))
 	write.csv(mergers[[name]], paste0(path, '/merged/', name, '.', gene, '.csv'), quote = F, row.names = F)
 }
