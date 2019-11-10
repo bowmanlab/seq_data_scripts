@@ -17,7 +17,7 @@ gene <- '16S'
 fnFs <- sort(list.files(path, pattern = '-R1.fastq', full.names = T))
 fnRs <- sort(list.files(path, pattern = '-R2.fastq', full.names = T))
 
-sample.names <- sapply(strsplit(basename(fnFs), "-"), `[`, 1)
+sample.names <- sapply(strsplit(basename(fnFs), "-R"), `[`, 1)
 
 pdf(paste0(path, '/', 'quality_profiles.pdf'), width = 6, height = 6)
 
@@ -39,10 +39,8 @@ out <- filterAndTrim(fnFs,
 	fnRs,
 	filtRs,
 	multithread = T,
-#	minQ = 20,
-#	truncQ = 30,
-	trimLeft = 10,
-	truncLen = 140,
+	trimLeft = 15,
+	truncLen = 150,
 	verbose = T)
 
 plotQualityProfile(filtFs[1])
@@ -86,7 +84,7 @@ check.length <- function(mergers){
     temp <- mergers[[name]]
     temp.lengths <- unlist(lapply(temp$sequence, nchar))
     temp.lengths.expand <- rep(temp.lengths, temp$abundance)
-    hist(temp.lengths.expand, breaks = 100)
+    hist(data.matrix(temp.lengths.expand), breaks = 100)
     
     temp[, 'length'] = temp.lengths
     mergers[[name]] = temp
@@ -94,14 +92,17 @@ check.length <- function(mergers){
   return(mergers)
 }
 
-## Write fasta file for all reads at or below the expected read length.
+mergers <- check.length(mergers)
 
-max.read.length <- 155
+## Write fasta file for all reads at the expected read length.
 
-dir.create(paste0(path, '/', 'merged_2'))
+read.length <- 223
+
+dir.create(paste0(path, '/', 'merged'))
 
 for(name in names(mergers)){
   temp <- mergers[[name]]
-  temp <- temp[which(temp$length <= max.read.length),]
-	write.csv(mergers[[name]], paste0(path, '/merged_2/', name, '.', gene, '.csv'), quote = F, row.names = F)
+  temp <- temp[which(temp$length == read.length),]
+  print(c(name, sum(temp$abundance[which(temp$length == read.length)])))
+	write.csv(mergers[[name]], paste0(path, '/merged/', name, '.', gene, '.csv'), quote = F, row.names = F)
 }

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 Created on Sun Jan 07 13:22:11 2018
@@ -21,11 +21,11 @@ with open(name + '.exp.fasta', 'w') as exp_out, open(name + '.uni.fasta', 'w') a
         a = a + row.abundance
         l = l + 1
         
-        print >> uni_out, '>' + str(index) + '_unique'
-        print >> uni_out, row.sequence
+        print('>' + str(index) + '_unique', file = uni_out)
+        print(row.sequence, file=uni_out)
         
         for i in range(1, row.abundance):
-            print >> exp_out, '>' + str(index) + '_' + str(i)
-            print >> exp_out, row.sequence
+            print('>' + str(index) + '_' + str(i), file = exp_out)
+            print(row.sequence, file = exp_out)
             
-print name, l, a
+print(name, l, a)
