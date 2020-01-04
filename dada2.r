@@ -8,8 +8,8 @@
 
 library(dada2)
 
-path <- 'demultiplexed'
-gene <- '16S'
+path <- 'demultiplexed_18S'
+gene <- '18S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
 #fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
@@ -43,7 +43,7 @@ out <- filterAndTrim(fnFs,
 	truncLen = 150,
 	verbose = T)
 
-plotQualityProfile(filtFs[1])
+plotQualityProfile(filtFs[100])
 
 ## need distribution of lengths for filtFs and filtRs
 	
@@ -76,25 +76,36 @@ mergers <- mergePairs(dadaFs,
 ## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
 ## so if you have more than 10 strains you probably QC'd insufficiently.
 
-## Function to evaluate lengths in case you want to look at that.
+## Above method still produces reads of different lengths after merge.  Generate a function to
+## evaluate distribution of read lengths and eliminate anything that is not correct length.
 
 check.length <- function(mergers){
   for(name in names(mergers)){
-    temp <- mergers[[name]]
-    temp.lengths <- unlist(lapply(temp$sequence, nchar))
-    temp.lengths.expand <- rep(temp.lengths, temp$abundance)
-    hist(data.matrix(temp.lengths.expand), breaks = 100)
+    try({
+      print(name)
+      temp <- mergers[[name]]
+      temp.lengths <- unlist(lapply(temp$sequence, nchar))
+      temp.lengths.expand <- rep(temp.lengths, temp$abundance)
+      hist(data.matrix(temp.lengths.expand), breaks = 100)
     
-    temp[, 'length'] = temp.lengths
-    mergers[[name]] = temp
+      temp[, 'length'] = temp.lengths
+      mergers[[name]] = temp
+    }, silent = T)
   }
   return(mergers)
 }
 
 mergers <- check.length(mergers)
 
+## Write fasta file for all reads at the expected read length.
+
+read.length <- 223
+
 dir.create(paste0(path, '/', 'merged'))
 
 for(name in names(mergers)){
+#  temp <- mergers[[name]]
+#  temp <- temp[which(temp$length == read.length),]
+#  print(c(name, sum(temp$abundance[which(temp$length == read.length)])))
 	write.csv(mergers[[name]], paste0(path, '/merged/', name, '.', gene, '.csv'), quote = F, row.names = F)
 }
