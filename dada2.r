@@ -8,7 +8,7 @@
 
 library(dada2)
 
-path <- 'demultiplexed_18S'
+path <- 'demultiplexed'
 gene <- '18S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
@@ -98,8 +98,9 @@ check.length <- function(mergers){
 mergers <- check.length(mergers)
 
 ## Write fasta file for all reads at the expected read length.
+## Not currently limiting to expected read length.
 
-read.length <- 223
+#read.length <- 223
 
 dir.create(paste0(path, '/', 'merged'))
 
