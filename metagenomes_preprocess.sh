@@ -3,7 +3,7 @@
 ## This script is for demultiplexing and merging PE reads from the Illumina HiSeq platform for genomes or metagenomes.
 ## It assumes that your barcode file has two columns: <sample_name>/t<barcode>.  If your barcode has 10 characters but
 ## the sequencing center only provides 8 this method still works.  This method also considers only the forward read index
-## primer.
+## barcode.
 
 ## Demultiplex.
 
@@ -29,4 +29,10 @@ done
 while read f;do
 	pear -f demultiplexed/${f}-R1.fastq -r demultiplexed/${f}-R2.fastq -o merged/$f -j 72 -n 100 > demultiplexed/${f}.pear.txt
 done < samples.txt
+
+## Both iu-demultiplex and pear will produced uncompressed output files.  Likely you'll want to compress to save space.
+
+cd demultiplexed;ls *fastq|parallel gzip {}
+cd ../merged;ls *fastq|parallel gzip {}
+
 
