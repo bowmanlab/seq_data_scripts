@@ -14,7 +14,4 @@
 ## usually dada2.r gets run manually
 #./dada2.r
 
-for f in $(ls demultiplexed/merged/*csv);do
-	echo $f
-	./deunique_dada2.py $f
-done
+ls *csv|parallel ./deunique_dada2.py {}
