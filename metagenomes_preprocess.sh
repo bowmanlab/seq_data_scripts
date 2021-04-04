@@ -20,7 +20,7 @@ mkdir merged
 
 ## Get a list of all sample names.
 
-for f in merged/*-R1.fastq; do
+for f in `ls demultiplexed/*-R1.fastq`; do
 	printf '%s\n' "${f%-R1.fastq}" >> samples.txt
 done
 
@@ -34,5 +34,3 @@ done < samples.txt
 
 cd demultiplexed;ls *fastq|parallel gzip {}
 cd ../merged;ls *fastq|parallel gzip {}
-
-
