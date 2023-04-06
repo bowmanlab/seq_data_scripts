@@ -24,7 +24,7 @@ with open(name + '.exp.fasta', 'w') as exp_out, open(name + '.uni.fasta', 'w') a
         print('>' + str(index) + '_unique', file = uni_out)
         print(row.sequence, file=uni_out)
         
-        for i in range(1, row.abundance):
+        for i in range(0, row.abundance):
             print('>' + str(index) + '_' + str(i), file = exp_out)
             print(row.sequence, file = exp_out)
             
