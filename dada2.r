@@ -8,8 +8,8 @@
 
 library(dada2)
 
-path <- 'demultiplexed'
-gene <- '16S'
+path <- 'demultiplexed_18S'
+gene <- '18S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
 #fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
@@ -85,5 +85,5 @@ mergers <- mergePairs(dadaFs,
 
 seqtab <- makeSequenceTable(mergers)
 
-write.csv(t(seqtab), paste0('seqtable_', gene, '.csv', quote = F)
+write.csv(t(seqtab), paste0('seqtable_', gene, '.csv'), quote = F)
 
