@@ -79,11 +79,31 @@ mergers <- mergePairs(dadaFs,
                       derepRs,
                       maxMismatch = 0,
                       verbose=TRUE)
+					  
+seqtab <- makeSequenceTable(mergers)
+					  
+## remove ASVs associated with mitos and chloros for 16S only
+
+if(gene == '16S'){
+  
+  ## classify
+  
+  taxa <- assignTaxonomy(seqtab,
+                         '/data_store/silva_databases/silva_nr99_v138.1_train_set.fa.gz',
+                         multithread = T)
+
+  chloros <- row.names(taxa)[grep('Chloroplast', taxa[,'Order'])]
+  mitos <- row.names(taxa)[grep('Mitochondria', taxa[,'Family'])]
+
+  seqtab.reduced <- seqtab[,!colnames(seqtab) %in% chloros]
+  seqtab.reduced <- seqtab.reduced[,!colnames(seqtab.reduced) %in% mitos]
+  
+  write.csv(t(seqtab.reduced), paste0('seqtab.reduced_', gene, '.csv'), quote = F)
+  write.csv(taxa, paste0('taxa_', gene, '.csv'), quote = F)
+}
 
 ## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
 ## so if you have more than 10 strains you probably QC'd insufficiently.
-
-seqtab <- makeSequenceTable(mergers)
 
 write.csv(t(seqtab), paste0('seqtable_', gene, '.csv'), quote = F)
 
