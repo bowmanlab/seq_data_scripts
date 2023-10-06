@@ -83,6 +83,7 @@ mergers <- mergePairs(dadaFs,
 seqtab <- makeSequenceTable(mergers)
 					  
 ## remove ASVs associated with mitos and chloros for 16S only
+#!!! You should save discarded seqs in a different seqtable in case they're needed
 
 if(gene == '16S'){
   
@@ -94,12 +95,16 @@ if(gene == '16S'){
 
   chloros <- row.names(taxa)[grep('Chloroplast', taxa[,'Order'])]
   mitos <- row.names(taxa)[grep('Mitochondria', taxa[,'Family'])]
+  
+  seqtab.discard <- seqtab[,colnames(seqtab) %in% chloros|
+                             colnames(seqtab) %in% mitos]
 
   seqtab.reduced <- seqtab[,!colnames(seqtab) %in% chloros]
   seqtab.reduced <- seqtab.reduced[,!colnames(seqtab.reduced) %in% mitos]
   
   write.csv(t(seqtab.reduced), paste0('seqtab.reduced_', gene, '.csv'), quote = F)
   write.csv(taxa, paste0('taxa_', gene, '.csv'), quote = F)
+  write.csv(t(seqtab.discard), paste0('seqtab.discard_', gene, '.csv'), quote = F)
 }
 
 ## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
