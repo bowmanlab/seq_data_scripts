@@ -81,6 +81,12 @@ mergers <- mergePairs(dadaFs,
                       verbose=TRUE)
 					  
 seqtab <- makeSequenceTable(mergers)
+
+## remove chimeras
+seqtab.nochim <- removeBimeraDenovo(seqtab,
+                                    method = "consensus",
+                                    multithread = TRUE,
+                                    verbose = TRUE)
 					  
 ## remove ASVs associated with mitos and chloros for 16S only
 #!!! You should save discarded seqs in a different seqtable in case they're needed
@@ -89,17 +95,17 @@ if(gene == '16S'){
   
   ## classify
   
-  taxa <- assignTaxonomy(seqtab,
+  taxa <- assignTaxonomy(seqtab.nochim,
                          '/data_store/silva_databases/silva_nr99_v138.1_train_set.fa.gz',
                          multithread = T)
 
   chloros <- row.names(taxa)[grep('Chloroplast', taxa[,'Order'])]
   mitos <- row.names(taxa)[grep('Mitochondria', taxa[,'Family'])]
   
-  seqtab.discard <- seqtab[,colnames(seqtab) %in% chloros|
-                             colnames(seqtab) %in% mitos]
+  seqtab.discard <- seqtab.nochim[,colnames(seqtab.nochim) %in% chloros|
+				   colnames(seqtab.nochim) %in% mitos]
 
-  seqtab.reduced <- seqtab[,!colnames(seqtab) %in% chloros]
+  seqtab.reduced <- seqtab.nochim[,!colnames(seqtab.nochim) %in% chloros]
   seqtab.reduced <- seqtab.reduced[,!colnames(seqtab.reduced) %in% mitos]
   
   write.csv(t(seqtab.reduced), paste0('seqtab.reduced_', gene, '.csv'), quote = F)
@@ -110,5 +116,5 @@ if(gene == '16S'){
 ## ZymoBIOMICS Microbial Community Standard should have 8 bacterial strains, 2 fungal strains,
 ## so if you have more than 10 strains you probably QC'd insufficiently.
 
-write.csv(t(seqtab), paste0('seqtable_', gene, '.csv'), quote = F)
+write.csv(t(seqtab.nochim), paste0('seqtable_', gene, '.csv'), quote = F)
 
