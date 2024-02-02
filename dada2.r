@@ -8,16 +8,52 @@
 
 library(dada2)
 
-path <- 'demultiplexed_18S'
+path <- 'demultiplexed'
 gene <- '18S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
 #fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
 
-fnFs <- sort(list.files(path, pattern = '-R1.fastq', full.names = T))
-fnRs <- sort(list.files(path, pattern = '-R2.fastq', full.names = T))
+fnFs <- sort(list.files(path, pattern = 'R1.fastq', full.names = T))
+fnRs <- sort(list.files(path, pattern = 'R2.fastq', full.names = T))
 
-sample.names <- sapply(strsplit(basename(fnFs), "-R"), `[`, 1)
+## Sample names depend on demultiplexing program, select correct format.
+
+#sample.names <- sapply(strsplit(basename(fnFs), "_S[0-9]*_"), `[`, 1)
+sample.names <- sapply(strsplit(basename(fnFs), "-R1.fastq"), `[`, 1)
+
+## Use cutadapt to remove the revese primer on R2 if insert shorter than
+## read.  This code does forward and reverse reads which is not strictly
+## necessary but does no harm.
+
+if(gene %in% c('18S', 'ITS')){
+  FWD <- 'GTACACACCGCCCGTC'		# 1391f and EukBr eukaryotic 18S primers
+  REV <- 'TGATCCTTCTGCAGGTTCACCTAC'	# used by ANL Environmental Sequencing Facility
+  
+  cutadapt <- "/home/jsbowman/.local/bin/cutadapt"
+  path.cut <- file.path(path, "cutadapt")
+  if(!dir.exists(path.cut)) dir.create(path.cut)
+  
+  fnFs.cut <- file.path(path.cut, basename(fnFs))
+  fnRs.cut <- file.path(path.cut, basename(fnRs))
+  
+  FWD.RC <- dada2:::rc(FWD)
+  REV.RC <- dada2:::rc(REV)
+  # Trim FWD and the reverse-complement of REV off of R1 (forward reads)
+  R1.flags <- paste("-g", FWD, "-a", REV.RC) 
+  # Trim REV and the reverse-complement of FWD off of R2 (reverse reads)
+  R2.flags <- paste("-G", REV, "-A", FWD.RC) 
+  # Run Cutadapt
+  for(i in seq_along(fnFs)) {
+    system2(cutadapt, args = c(R1.flags, R2.flags, "-n", 2, # -n 2 required to remove FWD and REV from reads
+                               "-j", 0,
+                               "-o", fnFs.cut[i], "-p", fnRs.cut[i], # output files
+                               fnFs[i], fnRs[i])) # input files
+  }
+  
+  fnFs <- fnFs.cut
+  fnRs <- fnRs.cut
+}
 
 pdf(paste0(path, '/', 'quality_profiles.pdf'), width = 6, height = 6)
 
@@ -34,16 +70,32 @@ filtRs <- file.path(file_path, paste0(sample.names, "_R2.filt.fastq.gz"))
 
 ## multithreading only useful if multiple fastq files
 
-out <- filterAndTrim(fnFs,
-	filtFs,
-	fnRs,
-	filtRs,
-	multithread = T,
-	trimLeft = 15,
-	truncLen = 150,
-	verbose = T)
+if(gene == '16S'){
+  out <- filterAndTrim(fnFs,
+  	filtFs,
+  	fnRs,
+  	filtRs,
+  	multithread = T,
+  	trimLeft = 15,
+  	truncLen = 150,
+  	verbose = T)
+}else{
+  out <- filterAndTrim(fnFs,
+                       filtFs,
+                       fnRs,
+                       filtRs,
+                       multithread = T,
+                       minLen = 50,
+                       verbose = T)  
+}
 
-plotQualityProfile(filtFs[50])
+plotQualityProfile(filtFs[i])
+plotQualityProfile(filtRs[i])
+
+## redefine names in case some files didn't pass QC
+
+filtFs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R1.filt.fastq.gz', full.names = T))
+filtRs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R2.filt.fastq.gz', full.names = T))
 
 ## need distribution of lengths for filtFs and filtRs
 	
@@ -54,11 +106,6 @@ pdf(paste0(path, '/', 'error_rates.pdf'), width = 6, height = 6)
 print(plotErrors(errF, nominalQ = T))
 print(plotErrors(errR, nominalQ = T))
 dev.off()
-
-## redefine names in case some files didn't pass QC
-
-filtFs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R1.filt.fastq.gz', full.names = T))
-filtRs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R2.filt.fastq.gz', full.names = T))
 
 sample.names <- sapply(strsplit(basename(filtFs), "_R1"), `[`, 1)
 
