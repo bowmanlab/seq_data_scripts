@@ -28,21 +28,21 @@ sample.names <- sapply(strsplit(basename(fnFs), "-R1.fastq"), `[`, 1)
 
 if(gene %in% c('18S', 'ITS')){
   FWD <- 'GTACACACCGCCCGTC'		# 1391f and EukBr eukaryotic 18S primers
-  REV <- 'TGATCCTTCTGCAGGTTCACCTAC'	# used by ANL Environmental Sequencing Facility
-  
+  REV <- 'TGATCCTTCTGCAGGTTCACCTAC'	# used by ANL Environmental Sequencing Facility RC=GTAGGTGAACCTGCAGAAGGATCA
+
   cutadapt <- "/home/jsbowman/.local/bin/cutadapt"
   path.cut <- file.path(path, "cutadapt")
   if(!dir.exists(path.cut)) dir.create(path.cut)
-  
+
   fnFs.cut <- file.path(path.cut, basename(fnFs))
   fnRs.cut <- file.path(path.cut, basename(fnRs))
-  
+
   FWD.RC <- dada2:::rc(FWD)
   REV.RC <- dada2:::rc(REV)
   # Trim FWD and the reverse-complement of REV off of R1 (forward reads)
-  R1.flags <- paste("-g", FWD, "-a", REV.RC) 
+  R1.flags <- paste("-g", FWD, "-a", REV.RC)
   # Trim REV and the reverse-complement of FWD off of R2 (reverse reads)
-  R2.flags <- paste("-G", REV, "-A", FWD.RC) 
+  R2.flags <- paste("-G", REV, "-A", FWD.RC)
   # Run Cutadapt
   for(i in seq_along(fnFs)) {
     system2(cutadapt, args = c(R1.flags, R2.flags, "-n", 2, # -n 2 required to remove FWD and REV from reads
@@ -50,7 +50,7 @@ if(gene %in% c('18S', 'ITS')){
                                "-o", fnFs.cut[i], "-p", fnRs.cut[i], # output files
                                fnFs[i], fnRs[i])) # input files
   }
-  
+
   fnFs <- fnFs.cut
   fnRs <- fnRs.cut
 }
@@ -61,7 +61,7 @@ for(i in 1:length(fnFs)){
 	print(plotQualityProfile(fnFs[i]))
 	print(plotQualityProfile(fnRs[i]))
 }
-	
+
 dev.off()
 
 file_path <- file.path(paste0(path, '/','filtered')) # Place filtered files in filtered/ subdirectory
@@ -86,7 +86,7 @@ if(gene == '16S'){
                        filtRs,
                        multithread = T,
                        minLen = 50,
-                       verbose = T)  
+                       verbose = T)
 }
 
 plotQualityProfile(filtFs[i])
@@ -98,7 +98,7 @@ filtFs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R1.filt.fastq.
 filtRs <- sort(list.files(paste0(path, '/filtered/'), pattern = '_R2.filt.fastq.gz', full.names = T))
 
 ## need distribution of lengths for filtFs and filtRs
-	
+
 errF <- learnErrors(filtFs, multithread=TRUE)
 errR <- learnErrors(filtRs, multithread=TRUE)
 
@@ -109,10 +109,14 @@ dev.off()
 
 sample.names <- sapply(strsplit(basename(filtFs), "_R1"), `[`, 1)
 
+## Check if gene in sample name and add if it isn't
+
+if(!grepl(gene, sample.names[1])){
+  sample.names <- paste(sample.names, gene, sep = '.')
+}
+
 derepFs <- derepFastq(filtFs, verbose = T)
 derepRs <- derepFastq(filtRs, verbose = T)
-
-## wouldn't it make more sense to assemble here?
 
 names(derepFs) <- sample.names
 names(derepRs) <- sample.names
@@ -126,7 +130,7 @@ mergers <- mergePairs(dadaFs,
                       derepRs,
                       maxMismatch = 0,
                       verbose=TRUE)
-					  
+
 seqtab <- makeSequenceTable(mergers)
 
 ## remove chimeras
@@ -134,27 +138,27 @@ seqtab.nochim <- removeBimeraDenovo(seqtab,
                                     method = "consensus",
                                     multithread = TRUE,
                                     verbose = TRUE)
-					  
+
 ## remove ASVs associated with mitos and chloros for 16S only
 #!!! You should save discarded seqs in a different seqtable in case they're needed
 
 if(gene == '16S'){
-  
+
   ## classify
-  
+
   taxa <- assignTaxonomy(seqtab.nochim,
                          '/data_store/silva_databases/silva_nr99_v138.1_train_set.fa.gz',
                          multithread = T)
 
   chloros <- row.names(taxa)[grep('Chloroplast', taxa[,'Order'])]
   mitos <- row.names(taxa)[grep('Mitochondria', taxa[,'Family'])]
-  
+
   seqtab.discard <- seqtab.nochim[,colnames(seqtab.nochim) %in% chloros|
 				   colnames(seqtab.nochim) %in% mitos]
 
   seqtab.reduced <- seqtab.nochim[,!colnames(seqtab.nochim) %in% chloros]
   seqtab.reduced <- seqtab.reduced[,!colnames(seqtab.reduced) %in% mitos]
-  
+
   write.csv(t(seqtab.reduced), paste0('seqtab.reduced_', gene, '.csv'), quote = F)
   write.csv(taxa, paste0('taxa_', gene, '.csv'), quote = F)
   write.csv(t(seqtab.discard), paste0('seqtab.discard_', gene, '.csv'), quote = F)
