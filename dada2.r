@@ -8,14 +8,17 @@
 
 library(dada2)
 
-path <- 'demultiplexed'
-gene <- '18S'
+path <- 'demultiplexed_16S'
+gene <- '16S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
 #fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
 
-fnFs <- sort(list.files(path, pattern = 'R1.fastq', full.names = T))
-fnRs <- sort(list.files(path, pattern = 'R2.fastq', full.names = T))
+#fnFs <- sort(list.files(path, pattern = '*R1.fastq', full.names = T))
+#fnRs <- sort(list.files(path, pattern = '*R2.fastq', full.names = T))
+
+fnFs <- sort(list.files(path, pattern = '*R1_001.fastq.gz', full.names = T))
+fnRs <- sort(list.files(path, pattern = '*R2_001.fastq.gz', full.names = T))
 
 ## Sample names depend on demultiplexing program, select correct format.
 
