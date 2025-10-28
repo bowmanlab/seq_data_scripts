@@ -8,8 +8,8 @@
 
 library(dada2)
 
-path <- 'demultiplexed_16S'
-gene <- '16S'
+path <- '18S'
+gene <- '18S'
 
 #fnFs <- sort(list.files(path, pattern = 'Mock.*-R1.fastq', full.names = T))
 #fnRs <- sort(list.files(path, pattern = 'Mock.*-R2.fastq', full.names = T))
@@ -22,8 +22,8 @@ fnRs <- sort(list.files(path, pattern = '*R2_001.fastq.gz', full.names = T))
 
 ## Sample names depend on demultiplexing program, select correct format.
 
-#sample.names <- sapply(strsplit(basename(fnFs), "_S[0-9]*_"), `[`, 1)
-sample.names <- sapply(strsplit(basename(fnFs), "-R1.fastq"), `[`, 1)
+sample.names <- sapply(strsplit(basename(fnFs), "_S[0-9]*_L"), `[`, 1)
+#sample.names <- sapply(strsplit(basename(fnFs), "-R1.fastq"), `[`, 1)
 
 ## Use cutadapt to remove the revese primer on R2 if insert shorter than
 ## read.  This code does forward and reverse reads which is not strictly
@@ -141,6 +141,15 @@ seqtab.nochim <- removeBimeraDenovo(seqtab,
                                     method = "consensus",
                                     multithread = TRUE,
                                     verbose = TRUE)
+
+if(gene == '18S'){
+
+  taxa <- assignTaxonomy(seqtab.nochim,
+                         '/data_store/PR2_databases/pr2_version_5.0.0_SSU_dada2.fasta.gz',
+                         multithread = T)
+  
+  write.csv(taxa, paste0('taxa_', gene, '.csv'), quote = F)
+}
 
 ## remove ASVs associated with mitos and chloros for 16S only
 #!!! You should save discarded seqs in a different seqtable in case they're needed
