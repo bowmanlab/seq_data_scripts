@@ -1,0 +1,232 @@
+genome,completeness,contamination,strain_heterogeneity,length,N50,classification,closest_genome_reference,closest_genome_ani
+CHABO_DNA_13_bin.35,79.23,4.35,0,1680104,264.76281407035174,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__,,
+CHABO_DNA_13_bin.47,75.24,0.82,0,1315079,290.534170153417,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__Fluviibacter sp039805725,GCA_039805725.1,97.86
+CHABO_DNA_1_bin.28,80.29,0.4,0,1391163,305.4843641417651,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter sp040409795,GCF_040409795.1,98.19
+CHABO_DNA_1_bin.37,83.53,2.59,0,1794391,316.8945290468133,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae;g__Sediminibacterium;s__,,
+CHABO_DNA_1_bin.6,94.4,0.0,0,1564541,327.38415446071906,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_36_bin.22,55.27,6.61,0,1576438,245.75214972180072,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Salinivivens;s__,,
+CHABO_DNA_36_bin.41,85.93,3.84,0,1285562,271.9241516966068,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_36_bin.90,84.19,0.09,0,1194087,291.6995447647951,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__ZLKRG08;s__,,
+CHABO_DNA_45_bin.10,99.43,4.41,0,5226989,281.94411285946825,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Ectothiorhodospirales;f__Ectothiorhodospiraceae;g__Thioalkalivibrio;s__,,
+CHABO_DNA_45_bin.19,94.17,7.07,0,3705685,301.7314640064708,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__Saliniramus;s__,,
+CHABO_DNA_45_bin.50,95.03,0.31,0,3158668,340.1937457511897,d__Bacteria;p__Spirochaetota;c__Spirochaetia;o__DSM-27196;f__Alkalispirochaetaceae;g__Alkalispirochaeta;s__,,
+CHABO_DNA_58_bin.17,77.07,2.92,0,1014636,245.2663587374904,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Pontimonas;s__,,
+CHABO_DNA_58_bin.33,88.21,1.12,0,2344015,291.96110665597433,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Chthoniobacterales;f__JACTMZ01;g__JACTMZ01;s__,,
+CHABO_DNA_58_bin.41,51.13,1.34,0,552015,226.90533333333332,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA10105;f__UBA927;g__JACPFZ01;s__,,
+CHABO_DNA_58_bin.50,87.83,4.36,0,920371,248.37700760777685,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA10105;f__UBA927;g__XYB1-FULL-47-11;s__,,
+CHABO_DNA_58_bin.57,52.32,8.04,0,496620,222.44683908045977,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA10105;f__UBA927;g__XYB1-FULL-47-11;s__,,
+CHABO_DNA_63_bin.109,95.91,1.11,0,4133849,315.07049048512465,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Phormidesmidales;f__Phormidesmidaceae;g__Nodosilinea;s__,,
+CHABO_DNA_63_bin.123,92.29,9.76,0,2575221,302.0526120785476,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__Casp-actino8;s__,,
+CHABO_DNA_63_bin.175,56.17,7.68,0,2133720,253.68372093023257,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__CAIUPE01;s__,,
+CHABO_DNA_63_bin.187,70.17,1.61,0,1861097,288.16426799007445,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__UBA5976;g__;s__,,
+CHABO_DNA_63_bin.189,92.85,2.37,0,5451468,383.9324512534819,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__Pirellulaceae;g__JBKCUI01;s__,,
+CHABO_DNA_63_bin.70,96.4,0.01,0,2421331,380.529440870856,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales_D;f__Sanyastnellaceae;g__CAMCYM01;s__CAMCYM01 sp041191165,GCA_041191165.1,98.8
+CHABO_DNA_63_bin.79,93.74,5.18,0,2134803,322.4239436619718,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Steroidobacterales;f__Steroidobacteraceae;g__UBA964;s__,,
+CHABO_DNA_69_bin.17,98.05,0.25,0,2385334,275.0806383872322,d__Archaea;p__Halobacteriota;c__Methanosarcinia;o__Methanotrichales;f__Methanotrichaceae;g__CAZXDN01;s__,,
+CHABO_DNA_69_bin.25,79.62,0.69,0,2662495,311.52898825312616,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Propionibacteriales;f__Propionibacteriaceae;g__Propioniciclava;s__,,
+CHABO_DNA_69_bin.3,50.04,2.13,0,1791579,250.87871637564888,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Comamonas;s__Comamonas aquatica,GCF_000739875.1,97.75
+CHABO_DNA_69_bin.46,99.97,0.05,0,3124608,292.981699751861,d__Bacteria;p__Bacillota;c__Bacilli;o__Exiguobacteriales;f__Exiguobacteriaceae;g__Exiguobacterium_A;s__Exiguobacterium_A abrahamii,GCF_015645365.1,96.18
+CHABO_DNA_69_bin.59,76.07,9.79,0,4279275,262.5528982569923,d__Bacteria;p__Chloroflexota;c__Anaerolineae;o__CG2-30-64-16;f__CG2-30-64-16;g__MWBF01;s__,,
+CHABO_DNA_84_bin.22,82.39,3.43,0,2925739,306.0017361111111,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Chromobacteriaceae;g__Vogesella;s__,,
+CHABO_DNA_84_bin.3,80.44,3.96,0,2783242,329.21380090497735,d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__PNKL01;s__,,
+CHABO_DNA_84_bin.33,76.09,4.21,0,1557606,291.48279952550416,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__,,
+CHABO_DNA_84_bin.41,57.35,1.85,0,1899695,306.20708446866485,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Comamonas;s__,,
+CHABO_DNA_89_bin.120,64.42,1.71,0,1641316,305.7136177673875,d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__MGIIa-L2;s__MGIIa-L2 sp018666575,GCA_018666575.1,98.19
+CHABO_DNA_89_bin.61,87.3,1.56,0,2707004,280.59178905206943,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__IMCC26256;f__JAENVU01;g__JAENVU01;s__,,
+CHABO_DNA_89_bin.79,64.08,0.95,0,1080573,296.348615916955,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__UBA7446;s__UBA7446 sp024639165,GCA_024639165.1,97.84
+CHABO_DNA_90_bin.153,55.85,4.91,0,2252509,285.27051546391755,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__UBA1268;g__CACORA01;s__,,
+CHABO_DNA_90_bin.16,86.43,4.65,0,2447376,281.3103200287666,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__UBA668;s__,,
+CHABO_DNA_90_bin.18,64.61,4.33,0,1199488,264.12215320910974,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter sp009928245,GCF_018687475.1,97.77
+CHABO_DNA_90_bin.63,92.7,2.56,0,3499356,292.7281553398058,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__PCC-6307;f__Cyanobiaceae;g__Cyanobium;s__,,
+CHABO_DNA_90_bin.64,92.32,0.1,0,1948511,342.6558190843905,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Schleiferiaceae;g__UBA10364;s__UBA10364 sp029248145,GCA_029248145.1,97.97
+CHABO_DNA_13_bin.101,51.7,0.56,0,412588,248.6949494949495,d__Archaea;p__Nanobdellota;c__Nanobdellia;o__Woesearchaeales;f__21-14-0-10-32-9;g__21-14-0-10-32-9;s__,,
+CHABO_DNA_13_bin.110,58.7,1.2,0,1110864,279.48926014319807,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__Fluviibacter sp046093345,GCA_046093345.1,99.0
+CHABO_DNA_13_bin.74,56.75,5.88,0,1082724,256.57505601194924,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__UBA5976;g__UBA5976;s__,,
+CHABO_DNA_13_bin.97,84.99,0.55,0,1071131,283.9766081871345,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Methylophilaceae;g__Methylopumilus;s__,,
+CHABO_DNA_13_bin.99,95.34,0.12,0,544357,258.6273291925466,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__Phycocordibacterales;f__SBAW01;g__GWA1-54-10;s__,,
+CHABO_DNA_1_bin.12,95.47,4.01,0,1297061,307.73001508295624,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_1_bin.20,84.46,4.68,0,1932787,300.6468273487457,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__CAIOLM01;s__,,
+CHABO_DNA_1_bin.31,83.66,6.22,0,995507,240.3904761904762,d__Bacteria;p__Patescibacteriota;c__Patescibacteriia;o__Patescibacteriales;f__UBA12465;g__JAEZRQ01;s__,,
+CHABO_DNA_1_bin.38,71.62,1.66,0,1240462,283.61115133960897,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aurantimicrobium;s__,,
+CHABO_DNA_1_bin.44,92.85,1.38,0,2109155,329.6569974554708,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__Flavobacterium;s__Flavobacterium sp041191945,GCA_041191945.1,95.54
+CHABO_DNA_1_bin.60,55.34,2.75,0,1141779,261.42450765864334,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_1_bin.66,60.66,4.52,0,1973870,242.11329661683715,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Azonexus;s__,,
+CHABO_DNA_1_bin.7,90.23,1.42,0,2201102,307.24045977011497,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Methylophilaceae;g__Methylotenera;s__,,
+CHABO_DNA_1_bin.71,71.29,4.55,0,1428840,272.7765700483092,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aurantimicrobium;s__,,
+CHABO_DNA_36_bin.136,65.56,2.78,0,1194964,254.1221322537112,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aurantimicrobium;s__,,
+CHABO_DNA_36_bin.32,50.36,1.45,0,1033935,242.3634328358209,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__RS24;f__RS24;g__UBA8337;s__UBA8337 sp029253645,GCA_029253645.1,99.02
+CHABO_DNA_36_bin.5,88.66,0.29,0,1933749,369.97035692679975,d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__MGIIa-L1;s__,,
+CHABO_DNA_36_bin.87,91.03,2.59,0,1984687,366.85105140186914,d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__MGIIa-L1;s__MGIIa-L1 sp018701175,GCA_018701175.1,97.35
+CHABO_DNA_36_bin.91,88.53,0.0,0,1411843,353.5318646734855,d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Thalassarchaeaceae;g__MGIIb-N1;s__MGIIb-N1 sp002497295,GCA_002497295.1,99.6
+CHABO_DNA_45_bin.11,98.06,0.03,0,3379426,374.3318918918919,d__Bacteria;p__Bacteroidota;c__Rhodothermia;o__Balneolales;f__HLUCCA01;g__HLUCCA01;s__,,
+CHABO_DNA_45_bin.23,90.11,3.36,0,4034614,307.54341943419433,d__Bacteria;p__Spirochaetota;c__Spirochaetia;o__DSM-27196;f__SLAA01;g__SLAA01;s__,,
+CHABO_DNA_45_bin.35,60.93,0.92,0,989046,243.6823899371069,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__;s__,,
+CHABO_DNA_45_bin.40,90.02,0.0,0,1298501,316.19554455445547,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rickettsiales;f__;g__;s__,,
+CHABO_DNA_45_bin.49,99.92,1.3,0,2565474,300.7943074003795,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Thiomicrospirales;f__Thiomicrospiraceae;g__Thiomicrospira;s__Thiomicrospira microaerophila_A,GCF_023278225.1,96.98
+CHABO_DNA_58_bin.16,93.56,0.83,0,1346069,303.4989429175476,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aquiluna;s__,,
+CHABO_DNA_58_bin.18,58.54,3.08,0,1840807,244.7135986007871,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__JAIXZO01;s__,,
+CHABO_DNA_58_bin.32,86.11,0.02,0,1622214,296.8124635993011,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__,,
+CHABO_DNA_58_bin.7,97.76,1.05,0,3566365,324.34459849797804,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Mycobacteriales;f__Mycobacteriaceae;g__Mycobacterium;s__,,
+CHABO_DNA_63_bin.12,77.09,2.74,0,2867411,309.1307235232436,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__UBA1268;g__RGVT01;s__,,
+CHABO_DNA_63_bin.13,81.38,4.02,0,1433363,264.74285714285713,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_A;g__;s__,,
+CHABO_DNA_63_bin.164,72.25,2.82,0,4001647,328.9370869680148,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__Pirellulaceae;g__JBKCUI01;s__JBKCUI01 sp018969045,GCA_018969045.1,98.94
+CHABO_DNA_63_bin.165,95.62,0.02,0,1754134,340.6201648700064,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Coxiellales;f__Coxiellaceae;g__2-12-FULL-42-15;s__,,
+CHABO_DNA_63_bin.174,67.98,3.1,0,2011753,265.8439897698209,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Planktomarina;s__Planktomarina sp002683685,GCA_913041815.1,96.46
+CHABO_DNA_63_bin.67,92.78,3.78,0,3047340,314.2060585885486,d__Bacteria;p__Chloroflexota;c__Chloroflexia;o__Chloroflexales;f__Roseiflexaceae;g__UBA965;s__,,
+CHABO_DNA_63_bin.69,52.77,9.34,0,1615527,229.42863534675612,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__Casp-actino8;s__,,
+CHABO_DNA_63_bin.78,84.0,1.35,0,4346188,315.94673008323423,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Verrucomicrobiales;f__Akkermansiaceae;g__Luteolibacter;s__,,
+CHABO_DNA_63_bin.84,75.45,3.75,0,3244984,357.33178571428573,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__UBA1268;g__QWPN01;s__,,
+CHABO_DNA_69_bin.24,59.22,3.96,0,2152168,298.90130353817506,d__Bacteria;p__Bacillota;c__Clostridia;o__Clostridiales;f__Clostridiaceae;g__Proteiniclasticum;s__,,
+CHABO_DNA_69_bin.32,63.14,2.19,0,1190469,250.69876203576345,d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales;f__Anaerovoracaceae;g__UBA1422;s__,,
+CHABO_DNA_69_bin.40,94.42,0.32,0,3709191,350.9838611449452,d__Bacteria;p__Acidobacteriota;c__Vicinamibacteria;o__Vicinamibacterales;f__JAKQTR01;g__JAKQTR01;s__,,
+CHABO_DNA_69_bin.49,52.83,2.75,0,2485597,277.4932159882655,d__Bacteria;p__Bacillota;c__Clostridia;o__Peptostreptococcales;f__Acidaminobacteraceae;g__JBGSUZ01;s__,,
+CHABO_DNA_69_bin.51,100.0,1.94,0,4543013,323.3039476870913,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Enterobacterales;f__Aeromonadaceae;g__Aeromonas;s__Aeromonas veronii_A,GCF_019048265.1,97.16
+CHABO_DNA_69_bin.58,51.16,1.54,0,1566435,240.02794411177643,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Chromatiales;f__Chromatiaceae;g__Thermochromatium;s__,,
+CHABO_DNA_84_bin.18,68.55,7.45,0,1220275,256.9306014540648,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__ZLKRG08;s__,,
+CHABO_DNA_84_bin.32,84.98,2.94,0,3170766,347.2276647119696,d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__Fen-1231;s__,,
+CHABO_DNA_84_bin.47,93.39,1.91,0,1175989,276.81735849056605,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA10105;f__UBA927;g__UBA927;s__,,
+CHABO_DNA_84_bin.63,88.35,4.9,0,1499271,257.20396600566573,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA12405;f__UBA12405;g__SZUA-533;s__,,
+CHABO_DNA_84_bin.65,74.14,1.47,0,3377941,284.7853431774679,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Stagnihabitans;s__,,
+CHABO_DNA_84_bin.75,75.04,4.49,0,1924898,251.8366067697451,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Aquisediminimonas;s__,,
+CHABO_DNA_89_bin.29,100.0,3.37,0,3029959,304.8107925801012,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Thalassovivens;s__Thalassovivens spotae,GCA_034423775.1,99.6
+CHABO_DNA_89_bin.39,87.33,0.42,0,3465167,325.8639661426844,d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__PNKL01;s__,,
+CHABO_DNA_89_bin.43,55.87,2.48,0,1449578,237.06659388646287,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Emcibacteraceae;g__Pseudemcibacter;s__,,
+CHABO_DNA_89_bin.55,89.7,8.62,0,3152454,286.65562913907286,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Azotimanducaceae;g__UBA4421;s__UBA4421 sp029248675,GCA_029248675.1,98.63
+CHABO_DNA_90_bin.73,92.1,5.32,0,1293012,264.10762331838566,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Actinomarinales;f__Actinomarinaceae;g__Actinomarina;s__Actinomarina sp963979435,GCA_963979435.1,98.67
+CHABO_DNA_90_bin.86,92.91,7.26,0,2681390,284.4226480836237,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Salinivivens;s__Salinivivens sp963999845,GCA_963999845.1,98.21
+CHABO_DNA_90_bin.89,83.58,0.09,0,3008322,327.3987161198288,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Halieaceae;g__Luminiphilus;s__Luminiphilus sp000169115,GCA_000169115.1,97.25
+CHABO_DNA_90_bin.99,95.35,1.05,0,2515006,316.46984126984125,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__S36-B12;g__Mxb001;s__,,
+CHABO_DNA_13_bin.10,72.56,3.08,0,1977542,297.6846758349705,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Methylococcales;f__Methylomonadaceae;g__UBA10906;s__,,
+CHABO_DNA_13_bin.106,91.3,5.89,0,3560837,314.8918395573997,d__Bacteria;p__Elusimicrobiota;c__Elusimicrobia;o__UBA1565;f__UBA9628;g__UBA9628;s__,,
+CHABO_DNA_13_bin.13,96.62,0.13,0,785663,268.8004535147392,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__Phycocordibacterales;f__UBA2100;g__UBA10103;s__,,
+CHABO_DNA_13_bin.26,87.23,1.94,0,1412959,291.55737704918033,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter victoriensis,GCF_900187875.1,98.4
+CHABO_DNA_13_bin.28,74.62,4.26,0,2764743,300.6172882537469,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Rhodoferax;s__,,
+CHABO_DNA_13_bin.54,100.0,1.39,0,3489134,311.9976147883125,d__Bacteria;p__Desulfobacterota;c__Desulfuromonadia;o__Geobacterales;f__CAIOGM01;g__;s__,,
+CHABO_DNA_1_bin.16,82.57,6.97,0,1703997,277.6119791666667,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__,,
+CHABO_DNA_1_bin.29,86.15,0.75,0,2015297,329.75954592363263,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__;s__,,
+CHABO_DNA_1_bin.4,76.2,0.06,0,1707840,298.1502561183836,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__Flavobacterium;s__,,
+CHABO_DNA_1_bin.47,84.67,8.3,0,1352009,283.2292225201072,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Methylophilaceae;g__Methylopumilus_A;s__,,
+CHABO_DNA_1_bin.52,60.55,7.51,0,1126652,265.0813609467456,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_1_bin.56,62.56,0.7,0,900870,320.7207505518764,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_1_bin.63,51.03,0.44,0,876976,270.3974732750243,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aurantimicrobium;s__,,
+CHABO_DNA_36_bin.55,76.83,7.97,0,1943417,277.8716894977169,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aurantimicrobium;s__,,
+CHABO_DNA_36_bin.67,91.72,1.7,0,2354854,301.1627719580983,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__S36-B12;g__Mxb001;s__,,
+CHABO_DNA_45_bin.16,96.79,6.69,0,2437592,304.1613924050633,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Ectothiorhodospirales;f__Ectothiorhodospiraceae;g__Ectothiorhodospira;s__,,
+CHABO_DNA_45_bin.18,91.56,0.5,0,1927729,314.9391401451703,d__Bacteria;p__Chlamydiota;c__Chlamydiia;o__Chlamydiales;f__JBMOFD01;g__;s__,,
+CHABO_DNA_45_bin.27,95.03,0.36,0,1351913,321.289613343442,d__Bacteria;p__Bacillota_I;c__Bacilli_A;o__Izemoplasmatales;f__Izemoplasmataceae;g__;s__,,
+CHABO_DNA_45_bin.8,98.41,0.56,0,2111751,330.452047952048,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Natronospirillaceae;g__Natronospirillum;s__,,
+CHABO_DNA_58_bin.15,64.21,7.51,0,780246,254.58020833333333,d__Bacteria;p__Patescibacteriota;c__WWE3;o__UBA101185;f__UBA10185;g__CAZCAQ01;s__,,
+CHABO_DNA_58_bin.23,92.51,3.66,0,849292,285.37514124293784,d__Bacteria;p__Patescibacteriota;c__Patescibacteriia;o__2-01-FULL-39-33;f__2-01-FULL-39-33;g__CAISTG01;s__,,
+CHABO_DNA_58_bin.27,52.38,9.79,0,2747244,254.85087459235103,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__JBDLRH01;s__,,
+CHABO_DNA_58_bin.43,60.23,0.7,0,1539430,226.5965746907707,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__PCC-6307;f__Cyanobiaceae;g__Cyanobium_A;s__,,
+CHABO_DNA_58_bin.44,91.54,3.63,0,3319321,306.3640675956122,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Novosphingobium;s__,,
+CHABO_DNA_58_bin.51,62.06,9.54,0,4606993,291.5661749428631,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__UBA1268;g__CACORA01;s__,,
+CHABO_DNA_58_bin.55,96.38,4.7,0,2141755,310.6472007722008,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Chthoniobacterales;f__UBA6821;g__UBA6821;s__,,
+CHABO_DNA_63_bin.11,74.71,3.32,0,2536405,277.5122807017544,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__JBDLRH01;s__JBDLRH01 sp046091865,GCA_046091865.1,97.73
+CHABO_DNA_63_bin.159,80.25,3.22,0,926849,251.86799276672696,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__SW-4-49-11;f__SW-4-49-11;g__CALRBF01;s__,,
+CHABO_DNA_63_bin.16,99.97,0.77,0,2789913,276.65365853658534,d__Bacteria;p__Bacillota;c__Bacilli;o__Exiguobacteriales;f__Exiguobacteriaceae;g__Exiguobacterium;s__Exiguobacterium mexicanum,GCF_025234665.1,98.04
+CHABO_DNA_63_bin.168,95.6,4.57,0,1459873,290.03117206982546,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aquiluna;s__,,
+CHABO_DNA_63_bin.185,89.39,0.17,0,3354643,316.0966096609661,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Mycobacteriales;f__Mycobacteriaceae;g__Mycobacterium;s__,,
+CHABO_DNA_63_bin.186,81.79,0.34,0,1221281,304.9215229215229,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Aquiluna;s__,,
+CHABO_DNA_63_bin.32,61.05,1.62,0,1052478,249.21396731054975,d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__Pseudogemmatithrix;s__Pseudogemmatithrix sp016871915,GCA_016871915.1,95.09
+CHABO_DNA_63_bin.83,95.03,5.71,0,3332239,294.26421022564983,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__SG8-41;g__Ga0077527;s__,,
+CHABO_DNA_63_bin.96,87.62,2.33,0,2018306,276.18811002661937,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Novosphingobium;s__Novosphingobium sp046566485,GCA_046566485.1,98.54
+CHABO_DNA_69_bin.11,82.31,3.04,0,3553003,307.96272600834493,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Bacteroidales;f__VadinHA17;g__LD21;s__,,
+CHABO_DNA_69_bin.12,95.19,1.37,0,2755273,327.230708035004,d__Bacteria;p__Desulfobacterota;c__Desulfobulbia;o__Desulfobulbales;f__Desulfobulbaceae;g__Electronema;s__,,
+CHABO_DNA_69_bin.18,84.36,1.03,0,2997106,269.61655454811347,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Pseudotabrizicola;s__,,
+CHABO_DNA_69_bin.20,96.83,5.1,0,2658836,300.91437427353736,d__Bacteria;p__Bacillota;c__Bacilli;o__Lactobacillales;f__Aerococcaceae;g__Trichococcus;s__,,
+CHABO_DNA_69_bin.60,87.73,0.11,0,4236859,345.71238425925924,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Cyanobacteriales;f__Microcoleaceae;g__;s__,,
+CHABO_DNA_84_bin.12,89.82,2.15,0,2036052,253.65180824222037,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__Methylocystis;s__Methylocystis sp023253795,GCA_023253795.1,98.16
+CHABO_DNA_84_bin.43,84.68,0.01,0,1765827,315.5259009009009,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_A;g__Lacustribacter;s__,,
+CHABO_DNA_84_bin.56,86.59,0.47,0,1680998,313.78194607268466,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_A;g__Lacustribacter;s__,,
+CHABO_DNA_84_bin.60,82.31,3.36,0,2454211,307.19249201277955,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__CAYQTH01;s__,,
+CHABO_DNA_84_bin.84,89.06,0.93,0,2518600,317.4123754152824,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Pseudomonadaceae;g__Geopseudomonas;s__,,
+CHABO_DNA_89_bin.134,79.37,3.76,0,1759392,262.55607917059376,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Palsa-1439;f__Palsa-1439;g__CAZMKD01;s__,,
+CHABO_DNA_89_bin.71,84.0,1.77,0,1155463,300.2062852538276,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Magnimaribacterales;f__D2472;g__SCGC-AAA076-P13;s__,,
+CHABO_DNA_89_bin.78,79.97,9.21,0,2597207,335.2330766112688,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales_D;f__Sanyastnellaceae;g__UBA8752;s__,,
+CHABO_DNA_90_bin.116,53.86,2.35,0,1036150,249.57210031347964,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__Polaribacter;s__,,
+CHABO_DNA_90_bin.129,79.54,0.39,0,1509818,287.75735735735736,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_A;g__Lacustribacter;s__,,
+CHABO_DNA_90_bin.14,96.48,3.22,0,1979811,312.0882800608828,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Amylibacter;s__Amylibacter sp000153745,GCA_000153745.1,98.94
+CHABO_DNA_90_bin.164,90.13,4.1,0,1714917,306.63445139283687,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__UBA3537;s__UBA3537 sp001735715,GCF_001735715.1,99.07
+CHABO_DNA_90_bin.5,53.93,4.23,0,4288720,286.2338967565098,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__Pirellulaceae;g__Rubripirellula;s__,,
+CHABO_DNA_13_bin.37,76.02,4.1,0,359219,231.1688311688312,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__Phycocordibacterales;f__UBA5272;g__UBA11704;s__,,
+CHABO_DNA_13_bin.6,55.01,5.56,0,1147818,258.2370475514549,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__,,
+CHABO_DNA_13_bin.60,79.46,1.63,0,991591,305.1885167464115,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__AAA044-D11;s__,,
+CHABO_DNA_13_bin.8,85.91,2.73,0,2098397,293.99816007359703,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Chitinophagaceae;g__OLB11;s__,,
+CHABO_DNA_13_bin.83,53.39,4.33,0,2850641,231.138096507598,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Xanthobacteraceae;g__Pseudolabrys;s__,,
+CHABO_DNA_13_bin.84,90.37,1.07,0,1856453,297.85506519558675,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__UBA2093;s__,,
+CHABO_DNA_1_bin.19,62.14,4.23,0,1239353,287.91336270190897,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter sp018687075,GCF_018687075.1,97.25
+CHABO_DNA_1_bin.22,68.37,9.73,0,1643535,282.81212452211906,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__,,
+CHABO_DNA_1_bin.32,61.45,3.09,0,2916416,253.25417020073508,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Cypionkella;s__,,
+CHABO_DNA_1_bin.35,82.25,0.6,0,1207253,321.39668049792533,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Rhodoluna;s__,,
+CHABO_DNA_36_bin.36,62.75,3.56,0,1446206,254.82621082621085,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Halieaceae;g__Luminiphilus;s__,,
+CHABO_DNA_36_bin.38,99.95,2.83,0,1755438,322.0338078291815,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Opitutales;f__Coraliomargaritaceae;g__GCA-2699365;s__GCA-2699365 sp049606355,GCA_049606355.1,98.68
+CHABO_DNA_45_bin.13,99.98,0.85,0,3622892,328.40308947828623,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Xanthomonadales;f__Wenzhouxiangellaceae;g__Wenzhouxiangella;s__,,
+CHABO_DNA_45_bin.14,99.97,1.7,0,2749730,321.20181063749527,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_B;g__Algicoccus;s__,,
+CHABO_DNA_45_bin.21,97.19,6.01,0,4190576,297.788765088208,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Opitutales;f__Coraliomargaritaceae;g__SKFT01;s__,,
+CHABO_DNA_45_bin.26,79.25,1.49,0,3163295,259.4065697361336,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Roseinatronobacter;s__Roseinatronobacter sp051859905,GCF_051859905.1,98.59
+CHABO_DNA_45_bin.31,93.14,1.9,0,2820862,281.3255436546576,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Caulobacterales;f__Maricaulaceae;g__Oceanicaulis;s__,,
+CHABO_DNA_45_bin.38,100.0,2.04,0,4599683,291.3941961448846,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Roseinatronobacter;s__,,
+CHABO_DNA_58_bin.14,62.9,3.0,0,1156962,259.67960479887086,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter sp039805525,GCA_039805525.1,98.95
+CHABO_DNA_58_bin.21,90.99,0.68,0,900555,293.11728395061726,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA1406;f__GWC2-37-13;g__GWC2-37-13;s__,,
+CHABO_DNA_58_bin.3,94.85,4.33,0,3156493,280.57864523536165,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__TNE-4;s__,,
+CHABO_DNA_58_bin.4,82.71,1.92,0,623539,245.5119798234552,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA1400;f__MFAQ01;g__UBA10133;s__,,
+CHABO_DNA_58_bin.53,80.03,3.57,0,1906183,269.2816584046868,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__PCC-6307;f__Cyanobiaceae;g__RGUW01;s__,,
+CHABO_DNA_58_bin.54,95.92,7.44,0,1044492,301.7838589981447,d__Bacteria;p__Patescibacteriota;c__Microgenomatia;o__UBA10105;f__UBA927;g__XYB1-FULL-47-11;s__,,
+CHABO_DNA_63_bin.105,94.38,2.73,0,2217708,307.8740191804708,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__Casp-actino8;s__,,
+CHABO_DNA_63_bin.115,65.62,2.52,0,1983471,259.5918624161074,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Caulobacterales;f__Caulobacteraceae;g__Phenylobacterium;s__,,
+CHABO_DNA_63_bin.160,91.92,3.51,0,3644069,297.0366339262012,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Polaromonas;s__,,
+CHABO_DNA_63_bin.177,57.58,1.46,0,941240,265.4160070360598,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__F1-60-MAGs027;s__F1-60-MAGs027 sp044340075,GCA_044340075.1,96.99
+CHABO_DNA_63_bin.65,67.76,5.03,0,1151872,286.00470957613817,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__,,
+CHABO_DNA_63_bin.9,70.63,3.24,0,2190783,268.30318322981367,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_E;g__UBA3064;s__UBA3064 sp005787245,GCA_900299025.1,99.24
+CHABO_DNA_69_bin.28,62.28,1.68,0,847550,236.30079155672823,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__;g__;s__,,
+CHABO_DNA_69_bin.36,94.08,4.52,0,4409552,278.4831485105458,d__Bacteria;p__Bacillota;c__Bacilli;o__Bacillales;f__Cytobacillaceae;g__Neobacillus;s__,,
+CHABO_DNA_69_bin.38,72.0,2.64,0,2136503,260.6331051147805,d__Bacteria;p__Desulfobacterota;c__Desulfuromonadia;o__Desulfuromonadales;f__BM103;g__VAUL01;s__,,
+CHABO_DNA_69_bin.44,95.13,2.18,0,6115671,335.31151729559747,d__Bacteria;p__Cyanobacteriota;c__Cyanobacteriia;o__Cyanobacteriales;f__Oscillatoriaceae;g__Ancylothrix;s__Ancylothrix sp036704045,GCA_036704045.1,96.69
+CHABO_DNA_69_bin.53,81.55,8.35,0,2161603,289.5971907566833,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Moraxellaceae;g__Acinetobacter;s__Acinetobacter sp028621895,GCF_028621895.1,97.04
+CHABO_DNA_84_bin.26,87.49,3.91,0,3410546,277.07313152960086,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Micrococcaceae;g__Arthrobacter;s__,,
+CHABO_DNA_84_bin.31,100.0,9.34,0,2598773,283.493871665465,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Methylophilaceae;g__Methylotenera;s__,,
+CHABO_DNA_84_bin.36,99.14,2.34,0,1231059,291.1844232182219,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__;s__,,
+CHABO_DNA_84_bin.53,91.85,0.26,0,1929587,314.06382978723406,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__UBA5976;g__JAKALQ01;s__,,
+CHABO_DNA_84_bin.61,99.75,2.72,0,2599551,321.30982905982904,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Moraxellaceae;g__Faucicola;s__,,
+CHABO_DNA_84_bin.68,50.01,3.89,0,2311644,250.98449879435069,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Reyranellales;f__Reyranellaceae;g__Reyranella;s__,,
+CHABO_DNA_84_bin.71,94.1,0.64,0,2609346,317.6727129337539,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Novosphingobium;s__,,
+CHABO_DNA_84_bin.76,88.34,1.44,0,1756263,293.7588046958378,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__Polynucleobacter sp040409805,GCF_040409805.1,98.03
+CHABO_DNA_84_bin.77,70.53,4.81,0,714036,239.0058207217695,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__Moranbacterales;f__UBA2206;g__JAKLFF01;s__,,
+CHABO_DNA_84_bin.8,98.75,4.29,0,892614,270.47004132231405,d__Bacteria;p__Patescibacteriota;c__Minisyncoccia;o__Moranbacterales;f__GWC2-37-73;g__;s__,,
+CHABO_DNA_89_bin.1,81.0,3.21,0,1781604,315.2157190635451,d__Archaea;p__Thermoplasmatota;c__Poseidoniia;o__Poseidoniales;f__Poseidoniaceae;g__Poseidonia;s__,,
+CHABO_DNA_89_bin.46,82.09,3.18,0,1742226,288.87486687965924,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Amylibacter;s__Amylibacter sp900197625,GCA_900197625.1,97.92
+CHABO_DNA_89_bin.8,72.06,1.46,0,1649902,296.5731778425656,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Salinivivens;s__Salinivivens sp029248915,GCA_029248915.1,99.06
+CHABO_DNA_89_bin.80,86.97,4.43,0,2899983,295.4241536458333,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Rhodoferax;s__,,
+CHABO_DNA_89_bin.81,72.29,6.59,0,2884080,247.02691453940068,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Malikia;s__,,
+CHABO_DNA_89_bin.90,75.76,2.03,0,2236596,287.3641237113402,d__Bacteria;p__Gemmatimonadota;c__Gemmatimonadetes;o__Gemmatimonadales;f__Gemmatimonadaceae;g__PNKL01;s__,,
+CHABO_DNA_90_bin.150,86.44,3.11,0,5203354,330.7685225778167,d__Bacteria;p__Planctomycetota;c__Planctomycetia;o__Pirellulales;f__Pirellulaceae;g__Mariniblastus;s__Mariniblastus sp024225195,GCA_024225195.1,97.16
+CHABO_DNA_90_bin.4,57.04,2.01,0,1066096,298.12554872695347,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Flavobacteriaceae;g__UBA7446;s__UBA7446 sp009886265,GCA_009886265.1,99.16
+CHABO_DNA_90_bin.70,97.58,0.97,0,2874853,339.0532786885246,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Chitinophagales;f__Saprospiraceae;g__UBA1994;s__UBA1994 sp002335865,GCA_002335865.1,97.64
+CHABO_DNA_90_bin.77,59.88,1.1,0,1502627,254.5032967032967,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Porticoccaceae;g__HTCC2207;s__HTCC2207 sp038135995,GCA_038135995.1,99.05
+CHABO_DNA_90_bin.93,59.34,3.79,0,1313995,250.38531005418423,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__Casp-actino8;s__,,
+CHABO_DNA_13_bin.112,88.82,8.64,0,1488343,293.81806853582555,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__UBA5976;g__UBA5976;s__,,
+CHABO_DNA_13_bin.71,79.8,7.6,0,2645911,280.7411202185792,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae_C;g__Malikia;s__,,
+CHABO_DNA_13_bin.92,76.76,2.46,0,1960694,261.90270506108203,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Methylococcales;f__Methylomonadaceae;g__Methylomonas;s__Methylomonas sp903902945,GCA_903902945.1,96.32
+CHABO_DNA_13_bin.95,85.57,6.75,0,2374741,295.1416498993964,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Burkholderiaceae;g__Polynucleobacter;s__,,
+CHABO_DNA_36_bin.45,82.88,0.01,0,1756336,287.4556892778993,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Opitutales;f__Coraliomargaritaceae;g__Thalassobacterium;s__Thalassobacterium sp049598495,GCA_049598495.1,97.34
+CHABO_DNA_36_bin.77,90.92,6.39,0,3046558,304.2930056710775,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__S36-B12;f__S36-B12;g__UBA10649;s__,,
+CHABO_DNA_45_bin.37,98.37,0.65,0,3293416,387.7096522078937,d__Bacteria;p__Bacteroidota;c__Rhodothermia;o__Balneolales;f__Natronogracilivirgulaceae;g__SLHZ01;s__,,
+CHABO_DNA_45_bin.39,100.0,0.79,0,2710318,312.7885648503454,d__Bacteria;p__Bdellovibrionota;c__Bdellovibrionia;o__Bdellovibrionales;f__Bdellovibrionaceae;g__;s__,,
+CHABO_DNA_45_bin.45,68.91,2.08,0,903321,275.45675413022354,d__Bacteria;p__Bacillota_I;c__Bacilli_A;o__Izemoplasmatales;f__Izemoplasmataceae;g__JAGYII01;s__,,
+CHABO_DNA_58_bin.2,57.84,4.58,0,1009587,268.1842105263158,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Legionellales;f__Legionellaceae;g__2-12-FULL-37-14;s__,,
+CHABO_DNA_58_bin.5,72.66,5.34,0,1503852,255.9326710816777,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Coxiellales;f__Coxiellaceae;g__2-12-FULL-42-15;s__,,
+CHABO_DNA_63_bin.136,99.17,0.32,0,1278041,313.5592960979342,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__MAG-120802;s__,,
+CHABO_DNA_63_bin.33,88.36,4.54,0,1816999,282.8795709410044,d__Bacteria;p__Actinomycetota;c__Acidimicrobiia;o__Acidimicrobiales;f__Ilumatobacteraceae;g__UBA3006;s__,,
+CHABO_DNA_63_bin.41,98.38,7.14,0,3119321,251.98510971786837,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Actinomycetales;f__Microbacteriaceae;g__Pontimonas;s__,,
+CHABO_DNA_63_bin.8,87.13,4.84,0,2810462,271.8208255159475,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhizobiales;f__Beijerinckiaceae;g__TNE-4;s__,,
+CHABO_DNA_63_bin.97,89.79,1.8,0,1554262,284.4484412470024,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Coxiellales;f__Coxiellaceae;g__2-12-FULL-42-15;s__,,
+CHABO_DNA_69_bin.30,53.69,0.74,0,2111961,235.8240469208211,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Rhodobacterales;f__Rhodobacteraceae;g__Tabrizicola;s__,,
+CHABO_DNA_69_bin.37,89.29,1.99,0,1168078,332.1625708884688,d__Bacteria;p__Patescibacteriota;c__JACMRA01;o__JACMRA01;f__JACMRA01;g__;s__,,
+CHABO_DNA_84_bin.30,51.34,5.22,0,878616,271.00097370983445,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Burkholderiales;f__Rhodocyclaceae;g__Fluviibacter;s__,,
+CHABO_DNA_84_bin.42,85.26,1.17,0,1194794,291.6205049732211,d__Bacteria;p__Actinomycetota;c__Actinomycetes;o__Nanopelagicales;f__Nanopelagicaceae;g__UBA7398;s__,,
+CHABO_DNA_84_bin.7,57.14,1.19,0,2413529,280.6077537058153,d__Bacteria;p__Desulfobacterota;c__;o__;f__;g__;s__,,
+CHABO_DNA_84_bin.79,78.03,2.12,0,2803977,299.29877835951135,d__Bacteria;p__Pseudomonadota;c__Alphaproteobacteria;o__Sphingomonadales;f__Sphingomonadaceae;g__Novosphingobium;s__,,
+CHABO_DNA_89_bin.116,70.12,4.76,0,1632259,320.78403465346537,d__Bacteria;p__Bacteroidota;c__Bacteroidia;o__Flavobacteriales;f__Schleiferiaceae;g__UBA10364;s__UBA10364 sp003023665,GCA_003023665.1,97.51
+CHABO_DNA_89_bin.118,88.02,8.59,0,2513338,301.5713131313131,d__Bacteria;p__Verrucomicrobiota;c__Verrucomicrobiia;o__Opitutales;f__Coraliomargaritaceae;g__Lentimonas;s__Lentimonas sp030829145,GCA_030829145.1,97.77
+CHABO_DNA_89_bin.59,56.67,2.32,0,1721795,258.5750497017893,d__Bacteria;p__Pseudomonadota;c__Gammaproteobacteria;o__Pseudomonadales;f__Porticoccaceae;g__HTCC2207;s__HTCC2207 sp002457245,GCA_045560535.1,97.46

@@ -1,0 +1,5 @@
+CHABO_DNA_1_S34_repaired_R1.fastq.gz	CHABO_DNA_1_S34_repaired_R2.fastq.gz	CHABO_DNA_1
+CHABO_DNA_13_S35_repaired_R1.fastq.gz	CHABO_DNA_13_S35_repaired_R2.fastq.gz	CHABO_DNA_13
+CHABO_DNA_36_S36_repaired_R1.fastq.gz	CHABO_DNA_36_S36_repaired_R2.fastq.gz	CHABO_DNA_36
+CHABO_DNA_45_S37_repaired_R1.fastq.gz	CHABO_DNA_45_S37_repaired_R2.fastq.gz	CHABO_DNA_45
+CHABO_DNA_51_S39_repaired_R1.fastq.gz	CHABO_DNA_51_S39_repaired_R2.fastq.gz	CHABO_DNA_51
