@@ -89,7 +89,8 @@ python3 mg_collect_genome_info.py
 ./mg_make_mag_index.sh
 
 ## to make workflow more consistent, mg_map_mags.sh loop should be moved outside to master script
-## this is a major bottleneck, would be good place to use fram and gjoa
+## this is a major bottleneck, would be good place to use fram and gjoa.  However if you do so you'll
+## overwrite the summary_stats.txt file, so this needs some work.
 
 ./mg_map_mags.sh samples.txt
 
